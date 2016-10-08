@@ -26,9 +26,9 @@ Route::post('/api/register', 'UserController@register');
 
 Route::post('/api/mile', 'MileController@getall');
 
-Route::post('/api/mile/{type}', 'MileControll@get');
+Route::post('/api/mile/{type}', 'MileController@get');
 
-Route::post('/api/mile/{type}/new', 'MileController@new');
+Route::post('/api/mile/{type}/{name}/new', 'MileController@newtrip');
 
-Route::post('/api/mile/{type}/add', 'MileControll@add');
+Route::post('/api/mile/{miles}/add', 'MileController@add');
 
