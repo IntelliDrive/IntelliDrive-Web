@@ -15,6 +15,20 @@ Route::auth();
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/api/login', 'UserController@login');
+Route::post('/api/login', 'UserController@login');
 
-Route::get('/api/register', 'UserController@register');
+Route::post('/api/register', 'UserController@register');
+
+
+/*
+----------------------------------------------------------
+*/
+
+Route::post('/api/mile', 'MileController@getall');
+
+Route::post('/api/mile/{type}', 'MileControll@get');
+
+Route::post('/api/mile/{type}/new', 'MileController@new');
+
+Route::post('/api/mile/{type}/add', 'MileControll@add');
+

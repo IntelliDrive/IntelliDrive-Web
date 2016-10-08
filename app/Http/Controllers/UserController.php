@@ -22,7 +22,7 @@ class UserController extends Controller
     public function login()
     {
         $userdata = array(
-	    'email'    => Input::get('username'),
+	    'email'    => Input::get('email'),
             'password' => Input::get('password')
         );
 
