@@ -23,6 +23,9 @@
         .fa-btn {
             margin-right: 6px;
         }
+        .brand_logo {
+            height: 5em;
+        }
     </style>
 </head>
 <body id="app-layout">
@@ -39,10 +42,9 @@
                 </button>
 
                 <!-- Branding Image -->
-                <!--<a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                <a class="header-brand" href="{{ url('/') }}">
+                    <img class="brand_logo" src="{{asset('assets/images/intellidrive_logo_80.png')}}" alt="IntelliDrive">
                 </a>
-                -->
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">

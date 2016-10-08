@@ -58,6 +58,9 @@ class MileController extends Controller
     public function newtrip($type, $name)
     {
         $token = Input::get('token');
+	if (!$token) {
+            return Response::json(['msg' => 'Failed to Generate new Trip'], 400);
+        }
 
         try {
             $responce = DB::update('update trip_data set end = current_timestamp where email=(SELECT email from users where app_token = ?) ORDER BY trip_number DESC LIMIT 1;', [$token]);
