@@ -66,4 +66,15 @@ class UserController extends Controller
        }
            return Response::json(['msg' => 'Account Created'], 200);
     }
+
+    /**
+     * Generates user profile page
+     *
+     *
+     */
+    public function account()
+    {
+        
+    }
+
 }

@@ -18,6 +18,13 @@ Route::get('/about', function () {
    return view('about');
 });
 
+Route::get('/get', function () {
+   return view('get');
+});
+
+Route::get('/mission', function () {
+   return view('mission');
+});
 
 /*
 -----------------------------------------------
@@ -30,6 +37,7 @@ Route::post('/api/login', 'UserController@login');
 
 Route::post('/api/register', 'UserController@register');
 
+Route::get('/account', "UserController@account");
 
 /*
 ----------------------------------------------------------
