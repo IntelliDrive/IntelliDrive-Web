@@ -30,16 +30,7 @@ class RouteTest extends TestCase {
     public function testCanGetGet()
     {
         $response = $this->call('GET', '/get');
-        $this->assertEquals(200, $response->getStatusCode()); 
-    }
-   
-    /**
-     * Tests to see if you can load mission page.
-     */
-    public function testCanGetMission()
-    {
-        $response = $this->call('GET', '/mission');
-        $this->assertEquals(200, $response->getStatusCode()); 
+        $this->assertEquals(301, $response->getStatusCode()); 
     }
 
     /**

@@ -19,11 +19,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/get', function () {
-   return view('get');
-});
-
-Route::get('/mission', function () {
-   return view('mission');
+   return Redirect::to('https://github.com/IntelliDrive/IntelliDrive-Android/releases', 301); 
 });
 
 /*
