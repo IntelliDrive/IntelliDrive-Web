@@ -33,7 +33,7 @@ Route::post('/api/login', 'UserController@login');
 
 Route::post('/api/register', 'UserController@register');
 
-Route::get('/account', "UserController@account");
+Route::get('/account', "UserController@account")->middleware('auth');
 
 /*
 ----------------------------------------------------------

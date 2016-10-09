@@ -40,7 +40,7 @@
 </style>
 
 <div class="container">
-    <h2>Intelligent features for your dumb car;</h2>
+    <h2>Making your dumb car smarter</h2>
     <p class="tagline">IntelliDrive's mission is to simplify responsible driving on and off the road, using three convenient utilities.</p>
     <table>
         <tr>

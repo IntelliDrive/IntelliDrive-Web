@@ -7,6 +7,7 @@ use DB;
 use Auth;
 use App\User;
 use Hash;
+use View;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
@@ -74,7 +75,9 @@ class UserController extends Controller
      */
     public function account()
     {
-        
+        $result = DB::select('SELECT t.* FROM trip_data t JOIN users u ON u.email = t.email WHERE u.id = ? ',[Auth::user()->id]);
+        $view = View::make('account')->with('trips', $result);
+        return $view;
     }
 
 }
